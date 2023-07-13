@@ -3,7 +3,7 @@
 /**
  * main - run echo command for print str in shell.
  *
- * Return: Always 1 (Success)
+ * Return: Always 1 (Failure)
  */
 int main(void)
 {
