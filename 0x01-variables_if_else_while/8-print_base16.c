@@ -17,7 +17,7 @@ a = 96;
 do {
 a++;
 putchar(a);
-} while (a < 103);
+} while (a < 102);
 putchar('\n');
 return (0);
 }
