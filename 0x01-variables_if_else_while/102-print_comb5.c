@@ -17,7 +17,7 @@ for (c = 48; c < 58; c++)
 {
 for (d = 48; d < 58; d++)
 {
-if (a == c && b < d || a < c)
+if ((a == c && b < d) || a < c)
 {
 putchar(a);
 putchar(b);
