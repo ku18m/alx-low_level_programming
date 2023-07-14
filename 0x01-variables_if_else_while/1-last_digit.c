@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include <time.h>
 /**
- * main - generate a random number then print it with negative or positive.
+ * main - generate a random number then print the last digit with some functions.
  *
  * Return: Always 0 (Success)
  */
