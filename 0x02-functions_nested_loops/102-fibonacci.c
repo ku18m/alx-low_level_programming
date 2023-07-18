@@ -2,6 +2,7 @@
 /**
  * main - entry point.
  *
+ * Description: find first 50 Fibonacci nums.
  *
  * Return: Always 0 (Success).
  */
