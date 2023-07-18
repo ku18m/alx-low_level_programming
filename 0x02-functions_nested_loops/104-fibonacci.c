@@ -10,13 +10,13 @@ int main(void)
 {
 	long double first = 1, second = 2, third, i;
 
-	printf("%.LF, %.LF, ", first, second);
+	printf("%.Lf, %.Lf, ", first, second);
 	for (i = 0; i < 32; i++)
 	{
 		third = first + second;
 		first = second + third;
 		second = first + third;
-		printf("%.LF, %.LF, %.LF", third, first, second);
+		printf("%.Lf, %.Lf, %.Lf", third, first, second);
 		if (i != 31)
 		{
 			printf(", ");
