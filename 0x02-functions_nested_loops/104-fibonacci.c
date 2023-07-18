@@ -11,13 +11,13 @@ int main(void)
 	long int first = 1, second = 2, third, i;
 
 	printf("%lu, %lu, ", first, second);
-	for (i = 0; i < 33; i++)
+	for (i = 0; i < 32; i++)
 	{
 		third = first + second;
 		first = second + third;
 		second = first + third;
 		printf("%lu, %lu, %lu", third, first, second);
-		if (i != 32)
+		if (i != 31)
 		{
 			printf(", ");
 		}
