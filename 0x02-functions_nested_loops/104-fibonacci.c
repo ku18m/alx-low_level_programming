@@ -10,7 +10,7 @@
 int main(void)
 {
 	unsigned long frst = 1, sec = 2, thrd, i, B = 100000000000,
-	thrd1, thrd2, frst1, frst2, sec1, sec2, r31, r32, r21, r22, r11, r12;
+	frst1, frst2, sec1, sec2, r31, r32, r21, r22, r11, r12;
 
 	printf("%lu, %lu, ", frst, sec);
 	for (i = 0; i < 32; i++)
@@ -22,7 +22,6 @@ int main(void)
 		}
 		else if (i == 30)
 		{
-			thrd1 = thrd / B, thrd2 = thrd % B;
 			frst1 = frst / B, frst2 = frst % B;
 			sec1 = sec / B, sec2 = sec % B;
 			r31 = frst1 + sec1, r32 = frst2 + sec2;
