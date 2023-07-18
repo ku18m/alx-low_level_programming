@@ -8,15 +8,15 @@
  */
 int main(void)
 {
-	long int first = 1, second = 2, third, i;
+	long double first = 1, second = 2, third, i;
 
-	printf("%lu, %lu, ", first, second);
+	printf("%.LF, %.LF, ", first, second);
 	for (i = 0; i < 32; i++)
 	{
 		third = first + second;
 		first = second + third;
 		second = first + third;
-		printf("%lu, %lu, %lu", third, first, second);
+		printf("%.LF, %.LF, %.LF", third, first, second);
 		if (i != 31)
 		{
 			printf(", ");
