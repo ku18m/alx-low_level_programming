@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	unsigned long frst = 1, sec = 2, thrd, i, B = 100000000000,
+	unsigned long frst = 1, sec = 2, thrd, i, a = 10000, b = 1000000,
 	frst1, frst2, sec1, sec2, r31, r32, r21, r22, r11, r12;
 
 	printf("%lu, %lu, ", frst, sec);
@@ -22,19 +22,21 @@ int main(void)
 		}
 		else if (i == 30)
 		{
-			frst1 = frst / B, frst2 = frst % B;
-			sec1 = sec / B, sec2 = sec % B;
+			frst1 = frst / 100, frst2 = frst % 1000000;
+			sec1 = sec / 100, sec2 = sec % 1000000;
 			r31 = frst1 + sec1, r32 = frst2 + sec2;
 			r11 = sec1 + r31, r12 = sec2 + r32;
 			r21 = r11 + r31, r22 = r12 + r32;
-			printf("%lu%lu, %lu%lu, %lu%lu", r31, r32, r11, r12, r21, r22);
+			printf("%lu%lu, %lu%lu, %lu%lu", (r31 / a), (r32 % b),
+			(r11 / a), (r12 % b), (r21 / a), (r22 % b));
 		}
 		else
 		{
 			r31 = r11 + r21, r32 = r12 + r22;
 			r11 = r21 + r31, r12 = r22 + r32;
 			r21 = r11 + r31, r22 = r12 + r32;
-			printf("%lu%lu, %lu%lu, %lu%lu", r31, r32, r11, r12, r21, r22);
+			printf("%lu%lu, %lu%lu, %lu%lu", (r31 / a), (r32 % b), (r11 / a),
+			(r12 % b), (r21 / a), (r22 % b));
 		}
 		if (i != 31)
 		{
