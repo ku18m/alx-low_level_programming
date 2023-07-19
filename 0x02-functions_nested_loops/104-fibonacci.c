@@ -28,7 +28,7 @@ int main(void)
 			r11 = sec1 + r31, r12 = sec2 + r32;
 			r21 = r11 + r31, r22 = r12 + r32;
 			printf("%lu%lu, %lu%lu, %lu%lu", (r31 / a), (r32 % b),
-			(r11 / a), (r12 % b), (r21 / a), (r22 % b));
+			(r11 / (a / 10)), (r12 % b), (r21 / a), (r22 % b));
 		}
 		else
 		{
