@@ -8,12 +8,12 @@ void print_most_numbers(void)
 {
 	int a = 47;
 
-	while (a < 58)
+	while (a < 57)
 	{
 		a++;
 		if (a == 50 || a == 52)
 		{
-            continue;
+			continue;
 		}
 		_putchar(a);
 	}
