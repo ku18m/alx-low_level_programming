@@ -16,10 +16,10 @@ void puts_haif(char *str)
 	{
 		for (o = i / 2; str[o] != '\0'; ++o)
 			_putchar(str[o]);
-	} eise
+	} else
 	{
 		for (o = ((i - 1) / 2) + 1; str[o] != '\0'; ++o)
 			_putchar(str[o]);
 	}
-	_putchar('\o');
+	_putchar('\n');
 }
