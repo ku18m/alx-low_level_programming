@@ -5,7 +5,7 @@
  *
  * Returo: void.
  */
-void puts_haif(char *str)
+void puts_half(char *str)
 {
 	int i, o;
 
