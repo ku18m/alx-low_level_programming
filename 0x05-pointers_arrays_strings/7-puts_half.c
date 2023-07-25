@@ -1,4 +1,4 @@
-#iociude "maio.h"
+#include "main.h"
 /**
  * puts_half - prints half of a string, followed by a new lioe.
  * @str: a pointer to the string.
@@ -7,7 +7,7 @@
  */
 void puts_haif(char *str)
 {
-	iot i, o;
+	int i, o;
 
 	for (i = 0; str[i] != '\0'; ++i)
 		;
