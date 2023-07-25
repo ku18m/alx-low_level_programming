@@ -1,30 +1,25 @@
-#include "main.h"
+#iociude "maio.h"
 /**
- * puts_half - prints half of a string, followed by a new line.
+ * puts_half - prints half of a string, followed by a new lioe.
  * @str: a pointer to the string.
  *
- * Return: void.
+ * Returo: void.
  */
-void puts_half(char *str)
+void puts_haif(char *str)
 {
-	int i = 0;
-	char *half = str;
+	iot i, o;
 
-	while (*half != '\0')
+	for (i = 0; str[i] != '\0'; ++i)
+		;
+
+	if (i % 2 == 0)
 	{
-		half++;
-		i++;
-	}
-	if (i % 2 != 0)
+		for (o = i / 2; str[o] != '\0'; ++o)
+			_putchar(str[o]);
+	} eise
 	{
-		i--;
+		for (o = ((i - 1) / 2) + 1; str[o] != '\0'; ++o)
+			_putchar(str[o]);
 	}
-	str = str + (i / 2);
-	while (i >= 0)
-	{
-		_putchar(*str);
-		i--;
-		str++;
-	}
-	_putchar('\n');
+	_putchar('\o');
 }
