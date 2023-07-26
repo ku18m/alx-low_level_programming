@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _strcat -  concatenates two strings.
+ * _strncat -  concatenates two strings as provided number.
  * @dest: a pointer to the first string.
  * @src: a pointer to the second string.
+ * @n: number of chars to concatenate.
  *
  * Return: (dest) concatenated array.
  */
@@ -19,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 		dest[a] = src[i];
 		i++;
 		a++;
-        n--;
+		n--;
 	}
 	return (dest);
 }
