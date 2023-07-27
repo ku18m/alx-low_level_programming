@@ -34,7 +34,11 @@ char *cap_string(char *a)
 
 	while (a[i] != '\0')
 	{
-		if (ifseparator(a[i - 1]) == 1 && (a[i] <= 'z' && a[i] >= 'a'))
+		if (a[0] <= 'z' && a[0] >= 'a')
+        {
+            a[0] = (a[0] - 32);
+        }
+        if (ifseparator(a[i - 1]) == 1 && (a[i] <= 'z' && a[i] >= 'a'))
 		{
 			a[i] = (a[i] - 32);
 		}
