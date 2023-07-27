@@ -12,12 +12,10 @@ int ifseparator(char a)
 	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')',
 	'{', '}'};
 
-			printf("{%c}\n", a);
 	while (sep[i] != '\0')
 	{
 		if (a == sep[i])
 		{
-			printf("(sepp)\n");
 			return (1);
 		}
 		i++;
