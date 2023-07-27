@@ -36,6 +36,10 @@ char *cap_string(char *a)
 
 	while (a[i] != '\0')
 	{
+		if (a[i] == '\t')
+		{
+			a[i] = ' ';
+		}
 		if (ifseparator(a[i - 1]) == 1 && (a[i] <= 'z' && a[i] >= 'a'))
 		{
 			a[i] = (a[i] - 32);
