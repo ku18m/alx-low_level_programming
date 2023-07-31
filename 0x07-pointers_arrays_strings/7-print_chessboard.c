@@ -1,22 +1,20 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strstr - locates a substring.
+ * print_chessboard - prints a chessboard.
  *
- * @haystack: the string to search in.
- * @needle: the string to look for.
- * Return: the location of substring.
+ * @a: the 2D array that contains the chessboard :D.
  */
 void print_chessboard(char (*a)[8])
 {
 	int row, column;
 
-    for (row = 0; row < 8; row++)
-    {
-        for (column = 0; column < 8; column++)
-        {
-            _putchar(a[row][column]);
-        }
-        _putchar('\n');
-    }
+	for (row = 0; row < 8; row++)
+	{
+		for (column = 0; column < 8; column++)
+		{
+			_putchar(a[row][column]);
+		}
+		_putchar('\n');
+	}
 }
