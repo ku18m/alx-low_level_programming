@@ -10,33 +10,25 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, o, p, t;
-	int *count;
+	int i, o, p, t, count[4096];
 	char *ptr;
 
-	count = malloc(sizeof(int) * ac);
 	if (ac == 0 || av == NULL)
-	{
-		free(count);
 		return (NULL);
-	}
 	p = 0, i = 0;
 	while (p < ac)
 	{
 		o = 0;
 		while (av[p][o] != '\0')
 		{
-			i++;
-			o++;
+			i++, o++;
 		}
-		count[p] = o + 1;
-		p++;
+		count[p] = o + 1, p++;
 	}
 	ptr = malloc((sizeof(char) * i) + ac);
 	if (ptr == NULL)
 	{
 		free(ptr);
-		free(count);
 		return (NULL);
 	}
 	p = 0, o = 0;
@@ -52,12 +44,9 @@ char *argstostr(int ac, char **av)
 				break;
 			}
 			ptr[o] = av[p][t];
-			t++;
-			o++;
-			count[p]--;
+			t++, o++, count[p]--;
 		}
 		p++;
 	}
-	free(count);
 	return (ptr);
 }
