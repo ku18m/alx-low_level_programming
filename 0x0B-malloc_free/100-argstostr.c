@@ -25,7 +25,7 @@ char *argstostr(int ac, char **av)
 		}
 		count[p] = o + 1, p++;
 	}
-	ptr = malloc((sizeof(char) * i) + ac);
+	ptr = malloc((sizeof(char) * i) + ac + 1);
 	if (ptr == NULL)
 	{
 		free(ptr);
