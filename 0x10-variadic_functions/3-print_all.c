@@ -51,11 +51,9 @@ void print_string(va_list c)
 	if (store == NULL)
 	{
 		printf("(nil)");
+        return;
 	}
-	else
-	{
-		printf("%s", store);
-	}
+	printf("%s", store);
 }
 
 /**
