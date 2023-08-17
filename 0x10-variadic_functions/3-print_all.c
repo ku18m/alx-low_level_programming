@@ -69,6 +69,7 @@ void print_all(const char * const format, ...)
 {
 	unsigned int i, o;
 	va_list ptr;
+	char *separator = ", ";
 	print_handler funcs[] = {
 		{'c', print_char},
 		{'i', print_integer},
@@ -89,7 +90,7 @@ void print_all(const char * const format, ...)
 				funcs[o].func(ptr);
 				if (format[i + 1] != '\0')
 				{
-					printf(", ");
+					printf("%s", separator);
 				}
 			}
 			o++;
