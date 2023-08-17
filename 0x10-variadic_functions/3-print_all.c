@@ -2,7 +2,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_integer - prints a char from variable list.
+ * print_char - prints a char from variable list.
  *
  * @c: the variable list that holds the variables.
  *
