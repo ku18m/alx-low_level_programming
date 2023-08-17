@@ -51,7 +51,7 @@ void print_string(va_list c)
 	if (store == NULL)
 	{
 		printf("(nil)");
-        return;
+		return;
 	}
 	printf("%s", store);
 }
@@ -87,8 +87,8 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				funcs[o].func(ptr);
+				separator = ", ";
 			}
-            separator = ", ";
 			o++;
 		}
 		i++;
