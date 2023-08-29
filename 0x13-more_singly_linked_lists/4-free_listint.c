@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - adds a new node at the beginning of a listint_t list.
+ * free_listint - frees a listint_t list.
  *
  * @head: pointer to the first node.
  *
