@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listp - frees linked listp list.
+ * free_listptr - frees linked listp list.
  *
  * @head: pointer to the first node.
  *
@@ -27,7 +27,7 @@ void free_listptr(listp_t **head)
 /**
  * free_listint_safe - frees a listint_t list.
  *
- * @head: pointer to the first node.
+ * @h: pointer to the first node.
  *
  * Return: the size of the list that was free’d.
  */
@@ -59,7 +59,7 @@ size_t free_listint_safe(listint_t **h)
 			{
 				*h = NULL;
 				free_listptr(&hptr);
-				return nnodes;
+				return (nnodes);
 			}
 		}
 
@@ -71,5 +71,5 @@ size_t free_listint_safe(listint_t **h)
 
 	*h = NULL;
 	free_listptr(&hptr);
-	return nnodes;
+	return (nnodes);
 }
