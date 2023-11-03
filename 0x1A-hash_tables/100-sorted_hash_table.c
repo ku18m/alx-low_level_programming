@@ -42,7 +42,7 @@ shash_table_t *shash_table_create(unsigned long int size)
  *
  * Return: The created node OR null if it fails.
  */
-shash_node_t *insert_first(shash_node_t **h, const char *key, const char *value)
+shash_node_t *insert_first(shash_node_t **h, const char *key, const char *val)
 {
 	shash_node_t *tmp;
 
@@ -53,7 +53,7 @@ shash_node_t *insert_first(shash_node_t **h, const char *key, const char *value)
 		if (strcmp(key, tmp->key) == 0)
 		{
 			free(tmp->value);
-			tmp->value = strdup(value);
+			tmp->value = strdup(val);
 			return (tmp);
 		}
 		tmp = tmp->next;
@@ -65,7 +65,7 @@ shash_node_t *insert_first(shash_node_t **h, const char *key, const char *value)
 		return (NULL);
 
 	tmp->key = strdup(key);
-	tmp->value = strdup(value);
+	tmp->value = strdup(val);
 	tmp->next = *h;
 
 	*h = tmp;
