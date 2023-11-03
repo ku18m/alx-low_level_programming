@@ -9,7 +9,7 @@
  * @key: The key to get the index of it.
  * @size: Size of the hash table array.
  *
- * Return: Created hash table OR NULL if something went wrong.
+ * Return: The index of the key.
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
