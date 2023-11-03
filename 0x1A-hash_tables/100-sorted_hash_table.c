@@ -38,7 +38,7 @@ shash_table_t *shash_table_create(unsigned long int size)
  *
  * @h: The head of the linked list.
  * @key: The key of the node.
- * @value: The value that associated with the node.
+ * @val: The value that associated with the node.
  *
  * Return: The created node OR null if it fails.
  */
