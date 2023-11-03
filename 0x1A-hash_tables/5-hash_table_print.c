@@ -24,16 +24,13 @@ void hash_table_print(const hash_table_t *ht)
 	while (i < ht->size)
 	{
 		tmp = ht->array[i];
-		if (tmp != NULL)
+		while (tmp != NULL)
 		{
-			while (tmp != NULL)
-			{
-				if (flag == 1)
-					printf(", ");
-				printf("'%s': '%s'", tmp->key, tmp->value);
-				flag = 1;
-				tmp = tmp->next;
-			}
+			if (flag == 1)
+				printf(", ");
+			printf("'%s': '%s'", tmp->key, tmp->value);
+			flag = 1;
+			tmp = tmp->next;
 		}
 		i++;
 	}
