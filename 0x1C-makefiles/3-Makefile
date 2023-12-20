@@ -11,7 +11,7 @@ clean: FORCE
 	$(RM) -f *~ $(NAME)
 
 oclean: FORCE
-	rm -f $(OBJ)
+	$(RM) -f $(OBJ)
 
 fclean: FORCE clean oclean
 	
