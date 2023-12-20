@@ -18,4 +18,4 @@ fclean: FORCE clean oclean
 
 re: FORCE oclean all
 
-FORCE: $(@)
+FORCE:
